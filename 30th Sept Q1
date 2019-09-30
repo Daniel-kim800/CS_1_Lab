@@ -1,0 +1,5 @@
+first_name=str(input("enter first name:")) 
+last_name=str(input("enter last name:"))
+reverse1=first_name[::-1]
+reverse2=last_name[::-1]
+print(reverse1,reverse2)
