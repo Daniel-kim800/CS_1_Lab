@@ -1,0 +1,24 @@
+import random
+
+def main():
+  while True:
+    number=random.randint(1,20)
+    print('\n')
+    x=input("Enter a number:")
+    if x.isdigit():
+      if int(x)>20 or int(x)<1:
+        print(" Enter a number between 1 and 20(inclusive)!")
+      else:
+        diff=abs(int(x)-number)
+        print (" Difference between the two numbers is",(diff))
+        if number==int(x):
+          print(" Guess is correct!")
+        elif number>int(x):
+          print(" Your guess is lower than the random number!")
+        else:
+          print(" Your guess is higher than the random number!")
+    else:
+      print(" Input is not actual number,please try again!")
+main()
+
+
